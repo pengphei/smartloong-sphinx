@@ -59,29 +59,29 @@ Buildroot 龙芯1C支持指南
       
 * 龙芯启动参数设置指令如下：
 
-   基于 *cramfs* 文件系统的启动参数设置：
+  基于 *cramfs* 文件系统的启动参数设置：
    
-   .. code:: shell
+  .. code:: shell
    
-      PMON>set append 'root=/dev/mtdblock1 console=ttyS2,115200 rootfstype=cramfs video=ls1bfb:480x272-16@70'
+     PMON>set append 'root=/dev/mtdblock1 console=ttyS2,115200 rootfstype=cramfs video=ls1bfb:480x272-16@70'
  
-   基于 *jffs2* 文件系统的启动参数设置：
+  基于 *jffs2* 文件系统的启动参数设置：
    
-   .. code:: shell
+  .. code:: shell
    
-      PMON>set append 'root=/dev/mtdblock1 console=ttyS2,115200 rootfstype=jffs2 video=ls1bfb:480x272-16@70'
+     PMON>set append 'root=/dev/mtdblock1 console=ttyS2,115200 rootfstype=jffs2 video=ls1bfb:480x272-16@70'
 
-   基于 *yaffs2* 文件系统的启动参数设置：
+  基于 *yaffs2* 文件系统的启动参数设置：
    
-   .. code:: shell
+  .. code:: shell
    
-      set append 'root=/dev/mtdblock1 console=ttyS2,115200 rootfstype=yaffs2 video=ls1bfb:480x272-16@70'
+     set append 'root=/dev/mtdblock1 console=ttyS2,115200 rootfstype=yaffs2 video=ls1bfb:480x272-16@70'
 
-   PMON 中的系统重启指令：
+  PMON 中的系统重启指令：
    
-   .. code:: shell
+  .. code:: shell
    
-      PMON>reboot
+     PMON>reboot
       
 * 龙芯的根文件系统打包方法：
 
